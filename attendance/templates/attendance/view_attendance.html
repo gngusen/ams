@@ -1,0 +1,46 @@
+{% extends "attendance/base.html" %} 
+
+    {% block content %}
+        <h2>View Attendance</h2>
+        <main class="container">
+            <div class="row">
+                <div class="col">
+                    <table class="post">
+                        <thead>
+                        <tr>
+                        <th>User</th>
+                        <th>Created Date</th>
+                        <th>Service Name</th>
+                        <th>Adult Males</th>
+                        <th>Adult Females</th>
+                        <th>Child Males</th>
+                        <th>Child Females</th>
+                        <th>Total Adults </th>
+                        <th>Total Children </th>
+                        <th>Total Attendance </th>
+                        </tr>
+                        </thead>
+                    {%  for attendance in attendances %}
+
+                            <tbody>
+                            <tr>
+                            <td>{{ attendance.username }}</td>
+                            <td>{{ attendance.created_date }}</td>
+                            <td>{{ attendance.service_name }}</td>
+                            <td>{{ attendance.adult_males }}</td>
+                            <td>{{ attendance.adult_females }}</td>
+                            <td>{{ attendance.child_males }}</td>
+                            <td>{{ attendance.child_females }}</td>
+                            <td>{{ attendance.adult_males| add:attendance.adult_females }}</td>
+                            <td>{{ attendance.child_males| add:attendance.child_females }}</td>
+                            <td>{{ attendance.adult_males| add:attendance.adult_females| add:attendance.child_males| add:attendance.child_females }}</td>
+                            </tr>
+                            </tbody>
+                            
+                    {% endfor %}
+                    </table>
+                </div>
+            </div>
+        </main>
+       
+    {% endblock %}

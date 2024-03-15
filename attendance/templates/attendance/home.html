@@ -1,0 +1,12 @@
+{% extends 'attendance/base.html' %}
+
+{% block content %}
+<div id="home-container">
+  <div id="container">
+    <h3><a href="{% url 'new_attendance' %}">New Attendance</a></h3>
+  </div>
+  <div id="container">
+    <h3><a href="{% url 'view_attendance' %}">View Attendance</a></h3>
+  </div>
+</div>
+{% endblock %}

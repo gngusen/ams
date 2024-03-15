@@ -1,0 +1,163 @@
+h1 a, h2 a {
+    color: #e86124;
+    font-family: 'Lobster';
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+   }
+   
+   th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+   }
+   
+   th {
+    background-color: #f2f2f2;
+   }
+   
+   tr:nth-child(even) {
+    background-color: #f2f2f2;
+   }
+
+
+
+.page-header {
+    background-color: #e86124;
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding: 20px 20px 20px 40px;
+}
+
+.page-header h1,
+.page-header h1 a,
+.page-header h1 a:visited,
+.page-header h1 a:active {
+    color: #ffffff;
+    font-size: 36pt;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h4 {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+}
+
+h3 a {
+    font-family: 'Lobster';
+    text-align: center;
+    font-size: large;
+    color: #000000;
+}
+
+.date {
+    color: #828282;
+}
+
+.save {
+    float: right;
+}
+
+.post-form textarea,
+.post-form input {
+    width: 100%;
+}
+
+.top-menu,
+.top-menu:hover,
+.top-menu:visited {
+    color: #ffffff;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+}
+
+.post {
+    margin-bottom: 70px;
+}
+
+.post h2 a,
+.post h2 a:visited {
+    color: #000000;
+}
+
+.post > .date,
+.post > .actions {
+    float: right;
+}
+
+.btn-secondary,
+.btn-secondary:visited {
+    color: #e86124;
+    background: none;
+    border-color: #e86124;
+}
+
+.btn-secondary:hover {
+    color: #FFFFFF;
+    background-color: #e86124;
+}
+
+#form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+    margin: 0 auto;
+    width: 400px;
+    padding: 80px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.round-button {
+    display: inline-block;
+    padding: 7px 60px;
+    border-radius:25px;  
+    background-color: #e86124;
+    color: #ffffff;  
+    border: none;
+    text-align:center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 20px 0px 10px 50px;
+    
+}
+   
+.round-button:active {
+     background-color: #000000;
+}
+
+#container {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+    margin: 20px auto;
+    width: 300px;
+    padding: 50px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+    margin: 0 auto;
+    width: 400px;
+    padding: 80px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
