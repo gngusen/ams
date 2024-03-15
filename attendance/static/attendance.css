@@ -161,3 +161,16 @@ h3 a {
     border-radius: 4px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
+#new-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+    margin: 0 auto;
+    width: 400px;
+    padding: 80px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
